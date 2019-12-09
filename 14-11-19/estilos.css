@@ -1,0 +1,19 @@
+
+.main {
+  font-family: Tahoma;
+}
+
+/* color for all paragraphs */
+
+.primary { color: black; }
+
+/* Spacehips div p specificity test */
+.main .spaceships p {	color: #808080; }
+
+
+/* Spacehips div p.primary specificity test */
+.main .spaceships .primary {color: darkkhaki;}
+
+
+/* Are IDs or Classes more specific? */
+.main .spaceships .red { color: #FF1493; }

@@ -1,0 +1,14 @@
+Recuento html 
+
+* El lang en html se usa para todo en la parte mobile, no para el browser
+* hacer un repaso y empezar a hacer un curso de ux css
+* leer clean code
+* modal se comporta como un dialog
+* html5 no se necesita el slash de cierrte
+* existen etiquetas semanticas, estructurales y funcionales
+* etiquetas de linea y de bloque
+* blade, representacion de computador fisico
+* unix (buscar)
+* w3c
+* electron - node js (buscar)
+
