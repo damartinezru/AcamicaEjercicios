@@ -1,15 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-}
-
-.primary-container {
+.primary-container, .primary-container .first-block-container, .primary-container .first-block-container .cards-box, .primary-container .second-block-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,44 +8,74 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2%;
-  margin: 1%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
   width: 100%;
-  height: 100%;
   background-color: pink;
 }
 
+.primary-container {
+  padding: 2%;
+  width: 100vw;
+  height: 100vh;
+}
+
 .primary-container div {
-  border: 1px solid black;
+  border: 0.5px solid black;
 }
 
 .primary-container .first-block-container {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  width: 50%;
+  height: 100%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
 .primary-container .first-block-container .description-box {
-  height: 10rem;
+  padding: 20%;
+  text-align: justify;
+}
+
+.primary-container .first-block-container .cards-box {
+  width: 100%;
+}
+
+.primary-container .first-block-container .cards-box .tools-card {
+  width: 100%;
+}
+
+.primary-container .first-block-container .cards-box .project-card {
+  width: 50%;
 }
 
 .primary-container .second-block-container {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  width: 50%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
+.primary-container .second-block-container img {
+  border-radius: 50%;
+  width: 40%;
+}
+
+.primary-container .second-block-container span {
+  text-align: end;
+}
+
 .primary-container .third-block-container {
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
-  height: 5rem;
+  width: 100%;
+  height: 20%;
   background-color: red;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
