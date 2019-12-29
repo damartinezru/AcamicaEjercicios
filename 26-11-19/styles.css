@@ -35,14 +35,9 @@ body {
 .primary-container .first-block-container {
   width: 50%;
   height: 100%;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.primary-container .first-block-container .description-box {
-  padding: 20%;
-  text-align: justify;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .primary-container .first-block-container .cards-box {
@@ -57,20 +52,56 @@ body {
   width: 50%;
 }
 
+@media (max-width: 420px) {
+  .primary-container .first-block-container .cards-box {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .primary-container .first-block-container {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    width: 100%;
+  }
+}
+
 .primary-container .second-block-container {
   width: 50%;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 3%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .primary-container .second-block-container img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   border-radius: 50%;
-  width: 40%;
+  width: 30%;
 }
 
 .primary-container .second-block-container span {
   text-align: end;
+}
+
+.primary-container .second-block-container .description-box {
+  padding: 10%;
+  text-align: justify;
+}
+
+@media (max-width: 420px) {
+  .primary-container .second-block-container {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    width: 100%;
+  }
 }
 
 .primary-container .third-block-container {

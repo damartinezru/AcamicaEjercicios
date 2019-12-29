@@ -24,11 +24,8 @@ body {
         @extend %flexSettings;
         width: 50%;
         height: 100%;
-        order: 1;
-        .description-box{
-            padding: 20%;
-            text-align: justify;
-        }
+        order: 2;
+
         .cards-box{
             @extend %flexSettings;
             width: 100%;
@@ -38,18 +35,39 @@ body {
             .project-card {
                 width: 50%;
             }
+            @media (max-width: 420px) {
+                align-content: flex-start;
+                width: 100%;
+            }
+        }
+        @media (max-width: 420px) {
+            align-content: flex-start;
+            width: 100%;
         }
     }
     .second-block-container {
         @extend %flexSettings;
         width: 50%;
-        order: 2;
+        order: 1;
+        padding: 3%;
+        flex-direction: row;
         img {
+            align-self: flex-start;
             border-radius: 50%;
-            width: 40%;
+            width: 30%;
+            
         }
         span {
             text-align: end;
+        }
+        .description-box{
+            padding: 10%;
+            text-align: justify;
+        }
+
+        @media (max-width: 420px) {
+            align-content: flex-start;
+            width: 100%;
         }
     } 
     .third-block-container {
